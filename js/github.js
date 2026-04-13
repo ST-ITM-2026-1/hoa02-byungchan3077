@@ -2,21 +2,20 @@ const USERNAME = "byungchan3077";
 const profileUrl = `https://api.github.com/users/${USERNAME}`;
 const reposUrl = `https://api.github.com/users/${USERNAME}/repos`;
 
+
 async function fetchGitHubProfile() {
     try {
         const response = await fetch(profileUrl);
-        if (!response.ok) {
-            throw new Error("Failed to fetch profile");
-        }
         const data = await response.json();
-
         document.getElementById("profile-container").innerHTML = `
             <img src="${data.avatar_url}" alt="profile">
-            <h2>${data.name}</h2>
-            <p>${data.bio || "No bio available"}</p>
-            <p>Public Repos: ${data.public_repos}</p>
-            <p>Followers: ${data.followers}</p>
-            <p>Following: ${data.following}</p>
+            <div class="profile-info">
+                <h2>${data.name}</h2>
+                <p>${data.bio || "No bio available"}</p>
+                <p>Public Repos: ${data.public_repos}</p>
+                <p>Followers: ${data.followers}</p>
+                <p>Following: ${data.following}</p>
+            </div>
         `;
     } catch (error) {
         document.getElementById("profile-container").innerHTML =
@@ -24,7 +23,6 @@ async function fetchGitHubProfile() {
         console.log("Error fetching GitHub profile:", error);
     }
 }
-
 async function fetchGitHubRepos() {
     try {
         const response = await fetch(reposUrl);
