@@ -27,8 +27,14 @@
             <h1>Projects</h1>
         </section>
         <section class="projects-units">
+                <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="contest">Contest</button>
+                <button class="filter-btn" data-filter="individual">Individual</button>
+                <button class="filter-btn" data-filter="class">In Class</button>
+            </div>
             <ul>
-                <li>
+                <li data-category="contest">
                     <h2>2025 Weather Big Data Contest</h2>
                     <p>
                         Developed a high-precision forecasting model for district heat demand by implementing a weighted
@@ -40,7 +46,7 @@
                         energy consumption patterns.
                     </p>
                 </li>
-                <li>
+                <li data-category="individual">
                     <h2>Financial Performance Prediction Model</h2>
                     <p>
                         Developed a machine learning model using <strong>Scikit-learn's RandomForestRegressor</strong>
@@ -51,7 +57,7 @@
                         data-driven decision making.
                     </p>
                 </li>
-                <li>
+                <li data-category="class">
                     <h2>Personal Portfolio</h2>
                     <p>
                         Developed a responsive personal portfolio website using <strong>HTML5, CSS3, and
@@ -69,6 +75,7 @@
         <p>&copy; 2025 Byungchan. All rights reserved.</p>
     </footer>
     <script src="js/theme.js"></script>
+    <script src="js/filter.js"></script>
 </body>
 
 </html>

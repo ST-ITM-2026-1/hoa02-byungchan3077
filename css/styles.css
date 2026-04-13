@@ -271,6 +271,43 @@ main section {
 }
 
 /*PROJECTS*/
+/*FILTER*/
+.filter-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 2px solid #1a1a1a;
+    border-radius: 4px;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #e8431a;
+    color: #fff;
+    border-color: #e8431a;
+}
+
+body.dark .filter-btn {
+    border-color: #f5ede0;
+    color: #f5ede0;
+}
+
+body.dark .filter-btn:hover,
+body.dark .filter-btn.active {
+    background-color: #e8431a;
+    border-color: #e8431a;
+}
+
 .projects-units > ul {
     list-style: none;
     display: flex;
