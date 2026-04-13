@@ -250,6 +250,103 @@ footer {
     font-weight: 400;
 }
 
+
+.github-profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.github-profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #1a1a1a;
+}
+
+.github-profile h2 {
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.github-profile p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.github-profile a {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #e8431a;
+    text-decoration: none;
+}
+
+#repos-container {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+}
+
+.repo-card {
+    background-color: #fff;
+    border: 2px solid #1a1a1a;
+    border-top: 4px solid #e8431a;
+    border-radius: 4px;
+    padding: 24px 28px;
+    flex: 1;
+    min-width: 240px;
+    max-width: 320px;
+    word-break: break-word;
+}
+
+.repo-card:hover {
+    transform: translateY(-4px);
+}
+
+.repo-card h3 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.repo-card h3 a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.repo-card h3 a:hover {
+    color: #e8431a;
+}
+
+.repo-card p {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 13px;
+    color: #555;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.repo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #888;
+}
+
 /*481~768px*/
 @media (max-width: 768px) {
     header { padding: 14px 24px; }
