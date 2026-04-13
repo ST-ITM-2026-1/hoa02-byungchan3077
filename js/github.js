@@ -11,7 +11,7 @@ async function fetchGitHubProfile() {
             <img src="${data.avatar_url}" alt="profile">
             <div class="profile-info">
                 <h2>${data.name}</h2>
-                <p>${data.bio || "No bio available"}</p>
+                <p>${data.bio   || "No bio available"}</p>
                 <p>Public Repos: ${data.public_repos}</p>
                 <p>Followers: ${data.followers}</p>
                 <p>Following: ${data.following}</p>

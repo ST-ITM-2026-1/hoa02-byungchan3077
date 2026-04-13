@@ -3,7 +3,101 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*Dark Mode*/
+body.dark {
+    background-color: #2c2c2c;
+    color: #f5ede0;
+}
 
+body.dark header {
+    background-color: #2c2c2c;
+    border-bottom: 2px solid #f5ede0;
+}
+
+body.dark nav ul li a {
+    color: #f5ede0;
+}
+body.dark nav ul li a:hover {
+    color: #e8bf1a;
+}
+
+body.dark main section {
+    background-color: #2c2c2c;
+}
+
+body.dark .hero {
+    background-color: #3a3a3a;
+    color: #f5ede0;
+}
+
+body.dark .hero h1 {
+    color: #f5ede0;
+}
+
+body.dark .introduction-words h2 {
+    color: #f5ede0;
+}
+
+body.dark .introduction-words p {
+    color: #ccc;
+}
+body.dark .contact-form {
+    background-color: #3a3a3a;
+}
+body.dark .contact-form label {
+    background-color: #3a3a3a;
+    color: #f5ede0;
+    border-color: #f5ede0;
+}
+body.dark .skills-units > ul > li,
+body.dark .projects-units > ul > li,
+body.dark .repo-card,
+body.dark .contact-form input,
+body.dark .contact-form textarea,
+body.dark .contact-form select {
+    background-color: #3a3a3a;
+    color: #f5ede0;
+    border-color: #f5ede0;
+}
+
+body.dark .projects-units h2,
+body.dark .projects-units p,
+body.dark .skills-units h2,
+body.dark .skills-units ul li {
+    color: #f5ede0;
+}
+
+body.dark footer {
+    background-color: #1a1a1a;
+    color: #f5ede0;
+}
+body.dark .github-profile h2 {
+    color: #f5ede0;
+}
+
+body.dark .github-profile p {
+    color: #ccc;
+}
+
+body.dark .github-profile a {
+    color: #f5a623;
+}
+
+body.dark .repo-card h3 a {
+    color: #f5ede0;
+}
+
+body.dark .repo-card p {
+    color: #ccc;
+}
+
+body.dark .repo-info {
+    color: #aaa;
+}
+
+body.dark .github-repos h2 {
+    color: #f5ede0;
+}
 /*GLOBAL*/
 body {
     background-color: #f5ede0;
@@ -12,6 +106,37 @@ body {
 }
 
 /*HEADER & NAV*/
+#theme-toggle {
+    padding: 8px 16px;
+    background-color: #1a1a1a;
+    color: #f5ede0;
+    border: 2px solid #1a1a1a;
+    border-radius: 4px;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#theme-toggle:hover {
+    background-color: #e8431a;
+    border-color: #e8431a;
+}
+
+body.dark #theme-toggle {
+    background-color: #f5ede0;
+    color: #1a1a1a;
+    border-color: #f5ede0;
+}
+
+body.dark #theme-toggle:hover {
+    background-color: #e8431a;
+    color: #f5ede0;
+    border-color: #e8431a;
+}
+
 header {
     background-color: #f5ede0;
     border-bottom: 2px solid #1a1a1a;
@@ -20,7 +145,12 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -120,23 +250,24 @@ main section {
 }
 
 .skills-units h2 {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 900;
     text-transform: uppercase;
     color: #e8431a;
     margin-bottom: 16px;
+    text-align: center;
 }
-
 .skills-units ul {
     list-style: none;
 }
 
 .skills-units ul li {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial Black', sans-serif;
     font-size: 14px;
-    font-weight: 400;
-    color: #333;
-    padding: 6px 3px;
+    font-weight: 900;
+    color: black;
+    padding: 10px 3px 10px 12px;
+    line-height: 1.6;
 }
 
 /*PROJECTS*/
