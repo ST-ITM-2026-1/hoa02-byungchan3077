@@ -1,14 +1,12 @@
 document.addEventListener("DOMContentLoaded", init);
-
-
-
-
 function init() {
-    
     const toggleBtn = document.getElementById("theme-toggle");
+
     if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark");
         toggleBtn.textContent = "Light";
+    } else {
+        toggleBtn.textContent = "Dark";
     }
 
     toggleBtn.addEventListener("click", () => {
