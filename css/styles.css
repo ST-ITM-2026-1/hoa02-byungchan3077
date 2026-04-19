@@ -17,6 +17,12 @@ body.dark header {
 body.dark nav ul li a {
     color: #f5ede0;
 }
+
+body.dark nav ul li a.active {
+    color: #e8bf1a;
+
+}
+
 body.dark nav ul li a:hover {
     color: #e8bf1a;
 }
