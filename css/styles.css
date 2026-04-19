@@ -167,6 +167,10 @@ nav ul li a {
 nav ul li a:hover {
     color: #e8431a;
 }
+nav ul li a.active {
+    color: #e8431a;
+
+}
 
 /*HERO*/
 .hero {
